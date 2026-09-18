@@ -1,0 +1,79 @@
+.stats-section {
+    background-color: map-get($brand-colors, "dark-blue"); 
+    color: $white;
+    padding: 60px 0;
+  
+
+    .stats-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 30px;
+
+        .stat-box {
+            flex: 1 1 180px;
+
+            h2 {
+                font-size: $h2-size;
+                font-weight: $fw-bold;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: $base-font-size;
+                color: $text-color;
+                opacity: 0.9;
+            }
+        }
+
+        .divider {
+            width: 1px;
+            height: 50px;
+            background-color: rgba($white, 0.3);
+
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+    // Responsive
+    @include tablet {
+        .stats-container {
+            gap: 20px;
+
+            .stat-box {
+                h2 {
+                    font-size: 28px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    @include mobile {
+        padding: 40px 0;
+
+        .stats-container {
+            flex-direction: column;
+            gap: 25px;
+
+            .stat-box {
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

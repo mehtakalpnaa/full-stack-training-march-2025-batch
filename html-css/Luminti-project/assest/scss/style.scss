@@ -1,0 +1,133 @@
+@import 'variables';
+@import 'function';
+// @import'stats';
+@import 'mixin';
+@import 'reset';
+@import'footer';
+@import'hero';
+@import'stats';
+@import'contact';
+@import'about';
+@import 'service';
+@import'why-lumintu';
+@import'pricing';
+@import'testimonials';
+@import'process';
+
+:root {
+    --abc: black;
+    --text-color: #{$text-color};
+    --link-color-active: #{$link-color-active};
+}
+
+body {
+    font-family: $font-family-main;
+    font-size: $base-font-size;
+}
+
+
+
+
+
+.text-color {
+    color: $text-color;
+}
+
+.subtitle {
+    font-size: $subtitle-font-size;
+}
+
+.container {
+    max-width: pxToRem(1440);
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+}
+
+.main-header {
+    @include flex-between;
+    background: #F3F5FC;
+    padding: pxToRem(16) 5%;
+
+    z-index: z("header");
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: pxToRem(8);
+
+        &>a,
+        &>h3 {
+            margin: 0;
+        }
+
+        img {
+            height: pxToRem(24);
+            width: auto;
+            display: block;
+        }
+    }
+
+    .main-nav ul {
+        display: flex;
+        gap: pxToRem(24);
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    a {
+        color: #9F9F9F;
+        text-decoration: none;
+    }
+
+    .nav-active-link {
+        color: $link-color-active;
+    }
+
+    .btn-primary {
+        background-color: map-get($all-colors, "primary");
+        color: map-get($all-colors, "white");
+        border: none;
+        padding: pxToRem(18) pxToRem(30);
+        border-radius: 99px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        line-height: 1;
+
+
+        &:hover {
+            background-color: lighten(map-get($all-colors, "primary"), 5%);
+        }
+    }
+
+    @include tablet {
+        flex-direction: column;
+        gap: pxToRem(16);
+
+        .main-nav,
+        .btn-primary {
+            width: 100%;
+            text-align: center;
+        }
+
+        .main-nav ul {
+            justify-content: center;
+        }
+    }
+}
+
+@each $name, $color in $status-colors {
+    .alert-#{$name} {
+        background-color: $color;
+        color: $white;
+        padding: pxToRem(16);
+        border-radius: 4px;
+        border: 1px solid darken($color, 10%);
+
+        &:hover {
+            background-color: transparentize($color, 0.1);
+        }
+    }
+}

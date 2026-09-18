@@ -1,0 +1,149 @@
+.services-section {
+    padding: pxToRem(80) 0;
+    background-color: map-get($all-colors, "white");
+
+    .services-header {
+        @include flex-between;
+        align-items: flex-start;
+        margin-bottom: pxToRem(50);
+
+        .section-subtitle {
+            font-size: $subtitle-font-size;
+            color: $text-color;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: pxToRem(10);
+        }
+
+        h2 {
+            font-size: $h2-size;
+            color: map-get($brand-colors, "primary");
+            font-weight: $fw-bold;
+        }
+
+        .see-all {
+            color: $link-color-active;
+            font-weight: $fw-medium;
+            font-size: $base-font-size;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: pxToRem(15);
+
+            h2 {
+                font-size: pxToRem(36);
+            }
+        }
+
+        @include mobile {
+            h2 {
+                font-size: pxToRem(28);
+            }
+        }
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: pxToRem(30);
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            gap: pxToRem(25);
+            justify-items: center;
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            gap: pxToRem(20);
+            justify-items: center;
+        }
+
+        .service-card {
+            display: flex;
+            align-items: flex-start;
+            gap: pxToRem(20);
+            background-color: #f3f5fc;
+            padding: pxToRem(30);
+            border-radius: pxToRem(10);
+            transition: all 0.3s ease;
+            max-width: pxToRem(550);
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            }
+
+            .icon-box {
+                width: 550px;
+                height: 206px;
+                border-radius: pxToRem(10);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text {
+                h4 {
+                    font-size: $h5-size;
+                    color: map-get($brand-colors, "primary");
+                    font-weight: $fw-bold;
+                    margin-bottom: pxToRem(8);
+                }
+
+                p {
+                    font-size: $base-font-size;
+                    color: $text-color;
+                    line-height: 1.6;
+                }
+            }
+
+            @include tablet {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .icon-box {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: pxToRem(15);
+                }
+
+                .text {
+                    h4 {
+                        font-size: pxToRem(20);
+                    }
+                }
+            }
+
+            @include mobile {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                width: 100%;
+
+                .icon-box {
+                    margin-bottom: pxToRem(15);
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+/* ✅ Move battery outside of nesting — now it will surely apply */
+.battery {
+    width: 80px;
+    height: 92px;
+    border-radius: 5px;
+    object-fit: contain;
+}

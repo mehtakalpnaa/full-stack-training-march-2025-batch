@@ -1,0 +1,7 @@
+@function pxToRem($px) {
+    @return ($px / 16)+rem;
+}
+
+@function z($layer) {
+    @return map-get($z-layers, $layer);
+}

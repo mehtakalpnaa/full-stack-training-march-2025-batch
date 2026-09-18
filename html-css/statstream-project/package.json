@@ -1,0 +1,23 @@
+{
+  "name": "statstream-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehtakalpnaa/statstream-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehtakalpnaa/statstream-project/issues"
+  },
+  "homepage": "https://github.com/mehtakalpnaa/statstream-project#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}

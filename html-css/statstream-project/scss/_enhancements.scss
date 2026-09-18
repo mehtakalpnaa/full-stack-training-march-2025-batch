@@ -1,0 +1,29 @@
+@media (max-width: 576px) {
+    .hero-section h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .feature-tabs .tab-btn {
+        width: 100%;
+    }
+
+    footer .store-badges {
+        align-items: center;
+    }
+}
+
+
+:focus-visible {
+    outline: 2px dashed #007bff;
+    outline-offset: 2px;
+}
+
+a,
+button {
+    color: #000;
+
+    &:hover {
+        color: #0056b3;
+    }
+}

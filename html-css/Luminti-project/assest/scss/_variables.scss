@@ -1,0 +1,48 @@
+$primary: #050509;
+$secondary: #58585B;
+$white: white;
+$dark-blue: #003061;
+$text-color: #828284;
+$link-color-active: #3AA9E9;
+
+
+$status-success: #28a745;
+$status-error: #dc3545;
+
+
+$brand-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "white": $white,
+    "dark-blue": $dark-blue
+);
+
+$status-colors: (
+    "success": $status-success,
+    "error": $status-error,
+);
+
+$all-colors: map-merge($brand-colors, $status-colors);
+
+
+$z-layers: (
+    "base": 1,
+    "header": 10,
+    "modal": 100
+);
+
+$font-family-main: "DM Sans", sans-serif;
+
+
+$base-font-size: 16px;
+$subtitle-font-size: 17px;
+$h1-size: 56px;
+$h2-size: 48px;
+$h4-size: 32px;
+$h5-size: 24px;
+$h6-size: 20px;
+
+// Font Weights
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;

@@ -1,0 +1,119 @@
+.main-footer {
+    background-color: map-get($all-colors, "dark-blue");
+    color: map-get($all-colors, "white");
+    padding: pxToRem(40) 0;
+
+    .footer-content-wrapper {
+        padding-left: pxToRem(20);
+        padding-right: pxToRem(20);
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        gap: pxToRem(30);
+        padding-bottom: pxToRem(40);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-col {
+        flex-grow: 1;
+        flex-basis: 0;
+        min-width: 200px;
+    }
+
+    .footer-info {
+        flex-grow: 1.5;
+        max-width: 350px;
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: pxToRem(8);
+            margin-bottom: pxToRem(15);
+            font-size: pxToRem(24);
+            // font-weight: $fw-bold;
+            color: map-get($all-colors, "white");
+        }
+
+        .tagline {
+            color: map-get($all-colors, "white");
+            font-size: pxToRem(17);
+            margin-bottom: pxToRem(10);
+        }
+
+        .description {
+            color: #9F9F9F;
+            font-size: pxToRem(14);
+            margin-bottom: pxToRem(20);
+        }
+    }
+
+    .footer-links {
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: pxToRem(12);
+
+            a {
+                color: #9F9F9F;
+                text-decoration: none;
+
+                &:hover {
+                    color: $link-color-active;
+                }
+            }
+        }
+    }
+
+    .col-title {
+        color: map-get($all-colors, "white");
+        font-size: pxToRem(18);
+        font-weight: $fw-bold;
+        margin-bottom: pxToRem(20);
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: pxToRem(10);
+        font-size: pxToRem(14);
+        margin-bottom: pxToRem(10);
+
+        color: #9F9F9F;
+
+        a {
+            color: #9F9F9F;
+            text-decoration: none;
+        }
+    }
+
+    .footer-bottom {
+        @include flex-between;
+        padding-top: pxToRem(20);
+        font-size: pxToRem(14);
+       
+        color: $text-color; 
+    }
+
+    @include tablet {
+        .footer-top {
+            flex-direction: column;
+            gap: pxToRem(40);
+        }
+
+        .footer-col {
+            max-width: none;
+            min-width: 100%;
+        }
+
+        .footer-bottom {
+            flex-direction: column;
+            gap: pxToRem(10);
+            text-align: center;
+        }
+    }
+}

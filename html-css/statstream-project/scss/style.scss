@@ -1,0 +1,27 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import 'variable';
+@import 'navbar';
+@import 'footer';
+@import 'hero';
+@import 'features-tab';
+@import 'features-2';
+@import 'testimonials';
+@import 'assest-section';
+
+
+body {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.nav-link {
+    display: flex;
+}
+
+.demo-button {
+    text-align: center;
+    border-radius: 5px;
+}

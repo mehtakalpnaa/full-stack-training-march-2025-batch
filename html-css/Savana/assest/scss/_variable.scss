@@ -1,0 +1,58 @@
+// Colors
+$primary:       #C47A5E;
+$secondary:     #513125;
+$success:       #999999;
+$info:          #8B8B8B;
+$light:         #FFFFFF;
+$warning:       #faf8f7;
+$danger:        #F4EDE5;
+
+
+// Font-Size
+$font-size-base:              1rem;
+$h1-font-size:                $font-size-base * 5.875;
+$h2-font-size:                $font-size-base * 3.938;
+$h3-font-size:                $font-size-base * 2.25;
+$h4-font-size:                $font-size-base * 1.563;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+
+// Containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+// Nav-Bar
+$navbar-light-color: rgb(81, 49, 37);
+$navbar-light-active-color: rgb(196, 122, 95);
+$navbar-light-hover-color: rgb(196, 122, 95);
+
+
+// Spacers
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer,    // 16px
+  2: $spacer * 1.25,    // 20px
+  3: $spacer * 1.875,   // 30px
+  4: $spacer * 2.375,   // 38px
+  5: $spacer * 2.5,     // 40px
+  6: $spacer * 3.75,    // 60px
+  7: $spacer * 6.75,    // 108px
+  8: $spacer * 8.75,    // 140px
+  9: $spacer * 9.688,   // 155px
+  250: $spacer * 15.625,   // 250px
+  290: $spacer * 18.125,   // 290px
+);
+
+// Link
+$link-decoration: none; 
+
+
+// Form Border Radius
+$input-border-radius: none;

@@ -1,0 +1,132 @@
+.testimonials-section {
+    background-color: #F3F5FC; 
+    padding: 80px 0;
+   
+    color: map-get($brand-colors, "primary");
+
+    .testimonials-container {
+        width: 90%;
+        margin: 0 auto;
+
+        @include tablet {
+            width: 95%;
+        }
+    }
+
+
+    .testimonials-header {
+        @include flex-between;
+        align-items: flex-end;
+        margin-bottom: 50px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            font-weight: $fw-medium;
+            color: $text-color;
+            opacity: 0.7;
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: $h1-size;
+            font-weight: $fw-bold;
+            line-height: 1.2;
+            margin: 0;
+
+            @include tablet {
+                font-size: $h2-size;
+            }
+        }
+
+        .all-testimonials-link {
+            font-size: $base-font-size;
+            font-weight: $fw-medium;
+            color: $link-color-active;
+            text-decoration: none;
+            padding-bottom: 5px; 
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+    .testimonial-cards-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        @include tablet {
+            grid-template-columns: 1fr; 
+        }
+    }
+
+
+    .review-card {
+        background-color: $white;
+        border-radius: 10px;
+        height: 288px;
+        
+        padding: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+                flex-shrink: 0;
+            }
+
+            .details {
+                text-align: left;
+
+                .name {
+                    font-size: $base-font-size;
+                    font-weight: $fw-bold;
+                    margin: 0;
+                    line-height: 1.2;
+                }
+
+                .title {
+                    font-size: 14px;
+                    color: $text-color;
+                    opacity: 0.7;
+                    margin: 0;
+                    line-height: 1.2;
+                }
+            }
+        }
+
+        .rating {
+            color: #ffb400; 
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .review-text {
+            font-size: $base-font-size;
+            color: $text-color;
+            line-height: 1.6;
+            margin: 0;
+        }
+    }
+}

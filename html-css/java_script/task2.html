@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sum of Primes</title>
+</head>
+<body>
+
+  <h1>Open the console to see the result</h1>
+
+  <script>
+    function isPrime(num) {
+      if (num < 2) return false;
+      for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+      }
+      return true;
+    }
+
+    function sumPrimes(start, end) {
+      let sum = 0;
+      for (let i = start; i <= end; i++) {
+        if (isPrime(i)) {
+          sum += i;
+        }
+      }
+      return sum;
+    }
+
+    const result = sumPrimes(21, 50);
+    console.log(`Sum of primes between 21 and 50 is ${result}`);
+  </script>
+
+</body>
+</html>                                 

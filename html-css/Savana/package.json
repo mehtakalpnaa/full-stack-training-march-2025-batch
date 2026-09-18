@@ -1,0 +1,24 @@
+{
+  "name": "savana",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --no-source-map --style=compressed assest/scss/style.scss assest/css/style.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehtakalpnaa/Savana.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehtakalpnaa/Savana/issues"
+  },
+  "homepage": "https://github.com/mehtakalpnaa/Savana#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.94.2"
+  }
+}
