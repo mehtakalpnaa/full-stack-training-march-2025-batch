@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "email": "rahul@example.com",
+    "course": "Frontend Development",
+    "phone": "9876543210"
+  },
+  {
+    "id": 2,
+    "name": "Priya Verma",
+    "email": "priya@example.com",
+    "course": "React & Next.js",
+    "phone": "9123456780"
+  },
+
+   {
+    "id": 3,
+    "name": "kalpna",
+    "email": "kalpnamehtak@gmail.com",
+    "course": "React & Next.js",
+    "phone": "9123456780"
+  }
+]

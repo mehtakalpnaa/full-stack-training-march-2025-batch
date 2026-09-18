@@ -1,0 +1,58 @@
+[
+    {
+        "id": 31,
+        "name": "nisha",
+        "email": "nisa@example.com",
+        "age": 33,
+        "course": "BCA",
+        "image_url": "string"
+    },
+    {
+        "id": 32,
+        "name": "misha",
+        "email": "misa@example.com",
+        "age": 3,
+        "course": "BCA",
+        "image_url": "string"
+    },
+    {
+        "id": 3,
+        "name": "kisha",
+        "email": "kisa@example.com",
+        "age": 90,
+        "course": "BCA",
+        "image_url": "string"
+    },
+    {
+        "id": 10,
+        "name": "ktring",
+        "email": "kser@example.com",
+        "age": 0,
+        "course": "string",
+        "image_url": "string"
+    },
+    {
+        "id": 67,
+        "name": "avantika",
+        "email": "avantika@example.com",
+        "age": 55,
+        "course": "BA",
+        "image_url": "string"
+    },
+    {
+        "id": 45,
+        "name": "kumkum",
+        "email": "kumkum@example.com",
+        "age": 67,
+        "course": "BSC",
+        "image_url": "string"
+    },
+    {
+        "id": 4,
+        "name": "kalpna",
+        "email": "kalpna@gmail.com",
+        "age": 20,
+        "course": "BA",
+        "image_url": ""
+    }
+]
